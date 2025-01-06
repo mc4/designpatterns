@@ -12,7 +12,7 @@ public class Twitter<T> extends Network<T> {
     }
 
 	@Override
-	public boolean logIn(String userName, String password) {
+	public boolean logIn(final String userName, final String password) {
 		System.out.println("LogIn success on Twitter");
 		return true;
 	}

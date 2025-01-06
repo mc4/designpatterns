@@ -20,7 +20,7 @@ public abstract class Network<T> {
 
 	}
 
-	abstract boolean logIn(String userName, String password);
+	abstract boolean logIn(final String userName, final String password);
 	abstract List<T> getTimeline();
 	abstract void logOut();
 

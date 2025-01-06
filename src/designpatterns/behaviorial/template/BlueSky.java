@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BlueSky<T> extends Network<T> {
+	
+    public BlueSky(final String userName, final String password) {
+    	super();
+        this.userName = userName;
+        this.password = password;
+    }
 
 	@Override
 	public boolean logIn(final String userName, final String password) {
