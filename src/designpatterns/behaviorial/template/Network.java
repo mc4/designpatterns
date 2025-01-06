@@ -8,8 +8,7 @@ public abstract class Network<T> {
 	String userName;
 	String password;
 
-	public Network() {
-	}
+	public Network() { }
 
 	public List<T> getCurrentTimeline(final String message) {
 		if (logIn(this.userName, this.password)) {

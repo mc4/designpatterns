@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Twitter<T> extends Network<T> {
 	
-    public Twitter(String userName, String password) {
+    public Twitter(final String userName, final String password) {
     	super();
         this.userName = userName;
         this.password = password;
@@ -13,8 +13,8 @@ public class Twitter<T> extends Network<T> {
 
 	@Override
 	public boolean logIn(String userName, String password) {
-        System.out.println("LogIn success on Twitter");
-        return true;
+		System.out.println("LogIn success on Twitter");
+		return true;
 	}
 
 	@Override
@@ -24,7 +24,7 @@ public class Twitter<T> extends Network<T> {
 
 	@Override
 	public void logOut() {
-        System.out.println("Logout success on Twitter");
+		System.out.println("Logout success on Twitter");
 	}
 
 }
